@@ -1,0 +1,141 @@
+/* Box Model Hack */
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+background: #ddeefc;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Source Sans Pro", sans-serif;
+
+
+
+
+}
+
+#card {
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1em;
+  
+}
+
+.button {
+  width: 10em;
+  height: 3em;
+  background: #2364d2;
+  border: none;
+  border-radius: 5px;
+  color: #ffff;
+  box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
+  cursor: pointer;
+  margin: 1em 0;
+}
+
+#copy {
+  display: none;
+}
+#yt-link {
+  width: 90%;
+  height: 2em;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 1em 0;
+  background: none;
+  text-align: center;
+}
+
+.time {
+  width: 5em;
+  height: 2em;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 2em;
+  background: none;
+  text-align: center;
+}
+
+#timestamp-link {
+  width: 20em;
+  text-align: center;
+  font-size: 100%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (min-width: 320px) and (max-width: 500px)
+{
+
+  h1{
+    font-size: 1.5em;
+  }
+
+  #yt-link{
+    width: 90%;
+  }
+
+  .time-links{
+    width: 90%;
+  }
+
+  .time{
+    width: 100%;
+  }
+
+  #timestamp-link{
+    width: 90%;
+    font-size: 70%;
+  }
+
+  .button{
+    width: 90%;
+  }
+}

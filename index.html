@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>YouTube timestamp generator for mobile</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<section id="card">
+			<h1>YouTube link with time stamp for mobile </h1>
+		
+		<input id="yt-link" type="text" placeholder="Paste YouTube link here">
+		<section class="time-links">
+			<input class="time" id="minute" type="number" placeholder="minute" title="minute">
+			<input class="time" id="second" type="text" placeholder = "second" pattern="\d*" maxlength="2">
+		</section>
+		
+		
+		<input type="button" class="button" id="get-link" value="Get Link">
+		<a target="_blank" id="timestamp-link" href=""></a>
+		<input type="button" class="button" id="copy" value="Copy to clipboard">
+		<!-- <iframe width="300" height="175" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+		</section>
+		
+
+		
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
