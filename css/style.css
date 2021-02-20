@@ -65,6 +65,9 @@ h1 {
   box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
   cursor: pointer;
   margin: 1em 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #copy {
